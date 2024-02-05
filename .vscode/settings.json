@@ -39,8 +39,8 @@
     "scss.lint.unknownAtRules": "ignore",
     "[javascript]": {
         "editor.codeActionsOnSave": {
-            "source.fixAll": true,
-            "source.fixAll.eslint": true
+            "source.fixAll": "explicit",
+            "source.fixAll.eslint": "explicit"
         }
     },
     "javascript.autoClosingTags": true,
@@ -49,8 +49,8 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "[typescript]": {
         "editor.codeActionsOnSave": {
-            "source.fixAll": true,
-            "source.fixAll.eslint": true
+            "source.fixAll": "explicit",
+            "source.fixAll.eslint": "explicit"
         }
     },
     "typescript.autoClosingTags": true,
@@ -59,20 +59,20 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "[javascriptreact]": {
         "editor.codeActionsOnSave": {
-            "source.fixAll": true,
-            "source.fixAll.eslint": true
+            "source.fixAll": "explicit",
+            "source.fixAll.eslint": "explicit"
         }
     },
     "[typescriptreact]": {
         "editor.codeActionsOnSave": {
-            "source.fixAll": true,
-            "source.fixAll.eslint": true
+            "source.fixAll": "explicit",
+            "source.fixAll.eslint": "explicit"
         }
     },
     "[vue]": {
         "editor.codeActionsOnSave": {
-            "source.fixAll": true,
-            "source.fixAll.eslint": true
+            "source.fixAll": "explicit",
+            "source.fixAll.eslint": "explicit"
         },
         "editor.formatOnSave": true
     },
@@ -85,45 +85,45 @@
     },
     "[markdown]": {
         "editor.codeActionsOnSave": {
-            "source.fixAll": true,
-            "source.fixAll.eslint": true
+            "source.fixAll": "explicit",
+            "source.fixAll.eslint": "explicit"
         }
     },
     "[mdx]": {
         "editor.codeActionsOnSave": {
-            "source.fixAll": true,
-            "source.fixAll.eslint": true
+            "source.fixAll": "explicit",
+            "source.fixAll.eslint": "explicit"
         }
     },
     "[html]": {
         "editor.codeActionsOnSave": {
-            "source.fixAll": true,
-            "source.fixAll.eslint": true
+            "source.fixAll": "explicit",
+            "source.fixAll.eslint": "explicit"
         }
 
         // "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[css]": {
         "editor.codeActionsOnSave": {
-            "source.fixAll.stylelint": true
+            "source.fixAll.stylelint": "explicit"
         },
         "editor.defaultFormatter": "stylelint.vscode-stylelint"
     },
     "[less]": {
         "editor.codeActionsOnSave": {
-            "source.fixAll.stylelint": true
+            "source.fixAll.stylelint": "explicit"
         },
         "editor.defaultFormatter": "stylelint.vscode-stylelint"
     },
     "[scss]": {
         "editor.codeActionsOnSave": {
-            "source.fixAll.stylelint": true
+            "source.fixAll.stylelint": "explicit"
         },
         "editor.defaultFormatter": "stylelint.vscode-stylelint"
     },
     "[stylus]": {
         "editor.codeActionsOnSave": {
-            "source.fixAll.stylelint": true
+            "source.fixAll.stylelint": "explicit"
         },
         "editor.defaultFormatter": "stylelint.vscode-stylelint"
     },
@@ -140,13 +140,24 @@
     },
     "liveServer.settings.file": "index.html",
     "liveServer.settings.root": "/dist",
-    "terminal.integrated.fontFamily": "'SourceCodePro+Powerline+Awesome Regular'",
+    "terminal.integrated.fontFamily": "'MesloLGS NF'",
     "terminal.integrated.lineHeight": 1.1,
     "files.watcherExclude": {
         "**/.git/objects/**": true,
         "**/.git/subtree-cache/**": true,
         "**/node_modules/*/**": true,
         "**/public/**": true // adding this solved the slowdown
+    },
+    "[css][less][scss][stylus]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.stylelint": "explicit"
+        }
+    },
+    "[html][javascript][javascriptreact][markdown][mdx][typescript][typescriptreact][vue]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.fixAll.eslint": "explicit"
+        }
     }
     // "workbench.colorCustomizations": {
     //     // ...

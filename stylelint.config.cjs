@@ -29,9 +29,7 @@ module.exports = {
         {
             files: ['*.css', '**/*.css', '*.scss', '**/*.scss', '*.less', '**/*.less'],
             rules: {
-                'color-hex-case': 'lower',
-                'declaration-block-trailing-semicolon': 'always',
-                'block-closing-brace-newline-before': 'always',
+                // 'color-hex-alpha': 'always',
             },
         },
         {

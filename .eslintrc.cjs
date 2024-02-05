@@ -1,40 +1,37 @@
 module.exports = {
-    env: {
-        browser: true,
-        es2021: true,
-        node: true,
-    },
+    root: true,
+    env: { browser: true, es2020: true },
     extends: [
         'eslint:recommended',
         'plugin:react/recommended',
+        'plugin:react/jsx-runtime',
+        'plugin:react-hooks/recommended',
         'plugin:import/recommended', // 1. eslint-plugin-import
         'plugin:prettier/recommended', // 3. eslint-plugin-prettier
     ],
-    overrides: [],
-    parserOptions: {
-        ecmaVersion: 'latest',
-        sourceType: 'module',
+    ignorePatterns: ['dist', '.eslintrc.cjs', 'tailwind.config-all.cjs'],
+    parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
+    settings: {
+        react: { version: '18.2' },
+        'import/resolver': {
+            alias: {
+                map: [
+                    ['', './public'], // prevent eslint from complaining about absolute imports
+                ],
+                extensions: ['.js', '.jsx'],
+            },
+        },
     },
     plugins: [
-        'react',
+        'react-refresh',
         'simple-import-sort', // 2. eslint-plugin-simple-import-sort
     ],
     rules: {
-        // 2. eslint-plugin-simple-import-sort
+        'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
         'simple-import-sort/imports': 'warn',
         'simple-import-sort/exports': 'warn',
         'import/first': 'warn',
         'import/newline-after-import': 'warn',
         'import/no-duplicates': 'warn',
     },
-    settings: {
-        'import/resolver': {
-            alias: {
-                map: [['/vite.svg', './public/vite.svg']], // Unable to resolve path to module '/vite.svg
-            },
-        },
-    },
-    ignorePatterns: [
-        'tailwind.config-all.cjs', // ignore tailwindcss config
-    ],
 };

@@ -1,7 +1,7 @@
 {
     "recommendations": [
-        "Vue.volar", // Vue 3
-        "Vue.vscode-typescript-vue-plugin", // Vue 3
+        // "Vue.volar", // Vue 3
+        // "Vue.vscode-typescript-vue-plugin", // Vue 3
         "aaron-bond.better-comments", // Better Comments
         "christian-kohler.npm-intellisense", // NPM Intellisense
         "christian-kohler.path-intellisense", // Path Intellisense
@@ -17,10 +17,11 @@
         "wix.vscode-import-cost", // Import Cost
         "leodevbro.blockman", // Blockman
         "hoovercj.vscode-settings-cycler", // Settings Cycler
+        "jock.svg", // SVG
         "github.copilot", // GitHub Copilot
         "github.copilot-chat", // GitHub Copilot Chat
-        "codium.codium", // Codium
-        "danielsanmedium.dscodegpt", // DSCodeGPT
+        // "codium.codium", // Codium
+        // "danielsanmedium.dscodegpt", // DSCodeGPT
         "ritwickdey.liveserver", // Live Server
         "mikestead.dotenv", // DotENV
         "rangav.vscode-thunder-client", // Thunder Client

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import react from '@vitejs/plugin-react-swc';
 // import fs from 'fs';
 import { defineConfig, loadEnv } from 'vite';
